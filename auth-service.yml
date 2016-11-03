@@ -1,0 +1,17 @@
+server:
+  port: ${PORT:7777}
+
+info:
+  component: OAuth Server
+
+security.user.password: password
+
+security.oauth2.client.clientId: acme
+security.oauth2.client.clientSecret: acmesecret
+security.oauth2.client.authorized-grant-types: authorization_code,refresh_token,implicit,password,client_credentials
+security.oauth2.client.scope: server
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG

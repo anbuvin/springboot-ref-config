@@ -1,0 +1,5 @@
+server:
+  port: ${PORT:8010}
+
+info:
+  component: Hystrix Dashboard
